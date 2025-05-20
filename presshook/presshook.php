@@ -48,7 +48,6 @@ function presshook_handle_webhook(WP_REST_Request $request) {
             return new WP_REST_Response(['error' => 'Unauthorized'], 403);
         }
     }
-    }
 
     ob_start();
     try {
